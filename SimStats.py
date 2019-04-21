@@ -1,5 +1,5 @@
 class SimStats:
-	def __init(self):
+	def __init__(self):
 		self.winsA = 0
 		self.winsB = 0
 		self.shutsA = 0
@@ -21,10 +21,10 @@ class SimStats:
 
 		n = self.winsA + self.winsB
 		print("Summary of", n, "games:\n")
-		print("		wins (% total)	shutouts (% wins)")
-		print("-"*30)
+		print("	  wins (% total)	     shutouts (% wins)")
+		print("-"*50)
 		self.printLine("A", self.winsA, self.shutsA, n)
-		self.printLine("B", self.winsBm self.shutsB, n)
+		self.printLine("B", self.winsB, self.shutsB, n)
 
 	def printLine(self, label, wins, shuts, n):
 		template = "Player {0}:{1:5}   ({2:5.1%})   {3:11}   ({4})"

@@ -1,3 +1,5 @@
+from random import random
+
 class Player:
 	def __init__(self, prob):
 		# Create a player with this probability
@@ -15,4 +17,4 @@ class Player:
 	def getScore(self):
 		#Return this player's current score
 		return self.score
-		
+

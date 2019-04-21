@@ -1,3 +1,5 @@
+from Player import Player
+
 class RBallGame:
 	# A RBallGame represents a game in progress. A game has two players
 	# and keeps track of which one is currently serving.
@@ -32,6 +34,6 @@ class RBallGame:
 		
 		if self.server == self.playerA:
 			self.server = self.playerB
-			
+
 		else:
 			self.server = self.playerA
